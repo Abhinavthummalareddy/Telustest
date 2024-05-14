@@ -1,0 +1,277 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "DeploymentStackServerlessStack237E4609.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DeploymentStackServerlessStack237E4609.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DeploymentStackServerlessStack237E4609": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "DeploymentStackServerlessStack237E4609.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b20bfe2b06234636dc1c625921573e4eb077be1be488523aeeedb384b7510d5c.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DeploymentStackServerlessStack237E4609.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DeploymentStackServerlessStack237E4609.assets"
+      ],
+      "metadata": {
+        "/DeploymentStack/ServerlessStack/UserTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "UserTableBD4BF69E"
+            }
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/UserTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserTableBD4BF69E"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerLambdaServiceRole9DE496C5"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerLambdaServiceRoleDefaultPolicyD21FA372"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerLambda2E88F6E1"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getUserInfoLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getUserInfoLambdaServiceRoleB46F9DF2"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getUserInfoLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getUserInfoLambdaServiceRoleDefaultPolicyFB0FAD1F"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getUserInfoLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getUserInfoLambda06CA79D9"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPI535FD39A"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIDeployment7ADE09159699fba3bb2a4bb78af2f1d20bec703d"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIDeploymentStageprodE010B84E"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIEndpointD56655FD"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Default/register/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIregisterD3C91D09"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Default/register/POST/ApiPermission.DeploymentStackServerlessStackregisterAPI09182AE8.POST..register": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIregisterPOSTApiPermissionDeploymentStackServerlessStackregisterAPI09182AE8POSTregister7E351A5D"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Default/register/POST/ApiPermission.Test.DeploymentStackServerlessStackregisterAPI09182AE8.POST..register": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIregisterPOSTApiPermissionTestDeploymentStackServerlessStackregisterAPI09182AE8POSTregisterAD3B12A9"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/registerAPI/Default/register/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "registerAPIregisterPOST20128898"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPICD7244C6"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIDeployment9C6AC8C37f58d0c4930f59073a1fa782d3449fe5"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIDeploymentStageprod5BAAC7C2"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIEndpointA5AB9B46"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Default/users/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIusers48B5A93C"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Default/users/{userId}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIusersuserIdFFBE216A"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Default/users/{userId}/GET/ApiPermission.DeploymentStackServerlessStackgetInfoAPID2BBC269.GET..users.{userId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIusersuserIdGETApiPermissionDeploymentStackServerlessStackgetInfoAPID2BBC269GETusersuserId0B8F9AA3"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Default/users/{userId}/GET/ApiPermission.Test.DeploymentStackServerlessStackgetInfoAPID2BBC269.GET..users.{userId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIusersuserIdGETApiPermissionTestDeploymentStackServerlessStackgetInfoAPID2BBC269GETusersuserIdB4520062"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/getInfoAPI/Default/users/{userId}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getInfoAPIusersuserIdGET472B0DFB"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DeploymentStack/ServerlessStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DeploymentStack/ServerlessStack"
+    },
+    "DeploymentStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DeploymentStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DeploymentStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://654654308600/us-east-1",
+      "properties": {
+        "templateFile": "DeploymentStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::654654308600:role/cdk-hnb659fds-deploy-role-654654308600-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::654654308600:role/cdk-hnb659fds-cfn-exec-role-654654308600-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-654654308600-us-east-1/e833c48717f770be00d0d71e5d718c5cce4320864d687b6bb2225721f13520c5.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DeploymentStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::654654308600:role/cdk-hnb659fds-lookup-role-654654308600-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DeploymentStack.assets"
+      ],
+      "metadata": {
+        "/DeploymentStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DeploymentStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DeploymentStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
